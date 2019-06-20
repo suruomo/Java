@@ -11,10 +11,9 @@ public class YangHui1 {
 	    int row=scan.nextInt();
 	    calculate(row);
 	}
-
 	private static void calculate(int row) {
 		// TODO Auto-generated method stub
-		for(int i=1;i<row;i++) {
+		for(int i=1;i<row+1;i++) {
 			for(int j=1;j<=row-i;j++) {   //´òÓ¡¿Õ¸ñ
 				System.out.print(" ");
 			}

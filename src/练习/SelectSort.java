@@ -1,20 +1,20 @@
-package ¡∑œ∞.≈≈–Ú;
+package ¡∑œ∞;
 
 public class SelectSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[]= {5,3,7,4,2,8,6,9,0,1};
-		select(a);
+     int a[]= {2,5,3,1,4,7,6,0,9,8};
+     selectSort(a);
 	}
 
-	private static void select(int[] a) {
+	private static void selectSort(int[] a) {
 		// TODO Auto-generated method stub
 		int min;
 		for(int i=0;i<a.length-1;i++) {
 			min=i;
 			for(int j=i+1;j<a.length;j++) {
-				if(a[min]>a[j]) {
+				if(a[j]<a[min]) {
 					min=j;
 				}
 			}
@@ -24,8 +24,8 @@ public class SelectSort {
 				a[i]=t;
 			}
 		}
-		for(int t=0;t<a.length;t++) {
-			System.out.print(a[t]+"--");
+		for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]+"--");
 		}
 	}
 
